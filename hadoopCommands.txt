@@ -1,0 +1,16 @@
+Creating a directory/file in hadoop: 
+--> moving local contents of a particular file to created hadoop directory and file  
+
+hadoop fs -mkdir ./dir1
+
+hadoop fs -touchz ./dir1/file.txt
+
+touch file1.txt
+
+nano file1.txt
+
+hadoop fs -appendToFile ./file1.txt ./dir1/file.txt
+
+hadoop fs -cat ./dir1/file.txt
+
+
